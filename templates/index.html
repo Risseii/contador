@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Counter</h1>
+    <p>Contador 1</p>
+    <div> {{ session["count"] }}</div>
+    <p>Suma de contador 1 + incrementa</p>
+    <div> {{ session["suma"] }}</div>
+    <div class=" Container">
+        <a href="/" class="clase1">Click</a>
+        <a href="/destroy_session">Reset</a>
+        <a href="/double" class="clase2">Click +2</a>
+    </div>
+    <form action="/suma" method="post">
+        <label for="cuentac2">Incrementar contador</label>
+        <input type="text" name="cuentac1" id="cuentac2">
+    </form>
+</body>
+</html>
